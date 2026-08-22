@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Break Time Cary - Table Status</title>
+    <title>Break Time Fuquay-Varina - Table Status</title>
     <style>
         * {
             margin: 0;
@@ -232,10 +232,10 @@
     <div class="container">
         <div class="header">
             <h1>🎱 Table Status</h1>
-            <p>Break Time Cary — tap a table to toggle rented / available</p>
-            <a class="nav-link" href="index.html">Go to Specials admin →</a>
+            <p>Break Time Fuquay-Varina — tap a table to toggle rented / available</p>
+            <a class="nav-link" href="tables.html">Go to Cary Tables →</a>
             &nbsp;·&nbsp;
-            <a class="nav-link" href="tables-fuquay-varina.html">Go to Fuquay-Varina Tables →</a>
+            <a class="nav-link" href="index.html">Go to Specials admin →</a>
         </div>
 
         <!-- Login Section -->
@@ -272,6 +272,7 @@
 
     <script>
         const REPO = 'ncponyboy/Breaktime-Cary-Specials';
+        const FILE = 'tables-fuquay-varina.json';
         let ghToken = localStorage.getItem('breaktimeSpecialsToken');
         let tables = [];
         let savingInFlight = false;
@@ -289,7 +290,7 @@
             }
 
             try {
-                const response = await fetch(`https://api.github.com/repos/${REPO}/contents/tables.json`, {
+                const response = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`, {
                     headers: {
                         'Authorization': `Bearer ${token}`,
                         'Accept': 'application/vnd.github.v3+json'
@@ -337,7 +338,7 @@
 
         async function loadTables() {
             try {
-                const response = await fetch(`https://raw.githubusercontent.com/${REPO}/main/tables.json?t=${Date.now()}`);
+                const response = await fetch(`https://raw.githubusercontent.com/${REPO}/main/${FILE}?t=${Date.now()}`);
                 const data = await response.json();
                 tables = data.tables || [];
                 renderLastUpdated(data.last_updated);
@@ -394,7 +395,7 @@
             const data = { tables, last_updated: nowIso };
 
             try {
-                const getResponse = await fetch(`https://api.github.com/repos/${REPO}/contents/tables.json`, {
+                const getResponse = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`, {
                     headers: {
                         'Authorization': `Bearer ${ghToken}`,
                         'Accept': 'application/vnd.github.v3+json'
@@ -407,7 +408,7 @@
                 const sha = currentFile.sha;
                 const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
 
-                const updateResponse = await fetch(`https://api.github.com/repos/${REPO}/contents/tables.json`, {
+                const updateResponse = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`, {
                     method: 'PUT',
                     headers: {
                         'Authorization': `Bearer ${ghToken}`,
