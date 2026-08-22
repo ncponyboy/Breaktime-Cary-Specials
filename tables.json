@@ -1,15 +1,45 @@
 {
   "tables": [
-    { "number": 1, "available": true },
-    { "number": 2, "available": true },
-    { "number": 3, "available": true },
-    { "number": 4, "available": true },
-    { "number": 5, "available": true },
-    { "number": 6, "available": true },
-    { "number": 7, "available": true },
-    { "number": 8, "available": true },
-    { "number": 9, "available": true },
-    { "number": 10, "available": true }
+    {
+      "number": 1,
+      "available": true
+    },
+    {
+      "number": 2,
+      "available": true
+    },
+    {
+      "number": 3,
+      "available": true
+    },
+    {
+      "number": 4,
+      "available": true
+    },
+    {
+      "number": 5,
+      "available": false
+    },
+    {
+      "number": 6,
+      "available": true
+    },
+    {
+      "number": 7,
+      "available": true
+    },
+    {
+      "number": 8,
+      "available": true
+    },
+    {
+      "number": 9,
+      "available": true
+    },
+    {
+      "number": 10,
+      "available": true
+    }
   ],
-  "last_updated": null
+  "last_updated": "2026-08-22T14:59:20.450658Z"
 }
