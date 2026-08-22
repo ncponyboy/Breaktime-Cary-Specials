@@ -378,7 +378,7 @@
             savingInFlight = false;
 
             if (success) {
-                showAlert(`Table ${number} marked ${table.available ? 'available' : 'rented'}.`);
+                showAlert(`Table ${number} marked ${table.available ? 'available' : 'rented'}. May take a few minutes to appear in the app.`);
             } else {
                 // Revert on failure
                 table.available = !table.available;
