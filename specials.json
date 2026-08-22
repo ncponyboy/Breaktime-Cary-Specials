@@ -1,4 +1,20 @@
 {
-  "specials": [],
-  "last_updated": null
+  "specials": [
+    {
+      "id": "special_1787409985854",
+      "title": "Meatloaf",
+      "description": "This is where the weekly food specials can be added",
+      "start_date": "2026-08-22",
+      "end_date": "2026-08-29",
+      "restaurant_name": "Break Time Cary",
+      "restaurant_address": "6442 Tryon Road, Cary, NC 27518",
+      "restaurant_phone": "(919) 615-0107",
+      "restaurant_website": "https://www.breaktimecary.com",
+      "restaurant_hours": "Mon, Tue & Thu 3pm–2am · Wed, Fri & Sat 12pm–2am · Sun 12pm–12am",
+      "image_url": "",
+      "priority": 1,
+      "created_at": "2026-08-22T14:46:25.855Z"
+    }
+  ],
+  "last_updated": "2026-08-22T14:46:25.855Z"
 }
