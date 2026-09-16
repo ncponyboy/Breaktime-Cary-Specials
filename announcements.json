@@ -1,0 +1,15 @@
+{
+  "announcements": [
+    {
+      "id": "announcement_1789573200000",
+      "title": "Break Time 2 Update 📣",
+      "message": "Hey everyone — BTN (Break Time Nation) 💚\n\nWe’ve got an update on the second location: due to some unforeseen circumstances, Triple Barrel Tavern is no longer an option for us as our Break Time 2 spot.\n\nBut here’s the good news — this is a “not yet,” not a “never.” 🙌 We are still actively hunting for the perfect building and location, and Fuquay (or another city near you) could absolutely still be in the cards. We’re out here scouting, meeting with property folks, and staying patient for the RIGHT fit — because when we open Break Time 2, we want it to be right, not rushed.\n\nSo don’t be distraught! Break Time 2 is still very much a thing — the location is just TBD for now. With a little luck, we’re hoping to lock something down soon, and you’ll be the first to know the second we do. 🎱🔥\n\nThanks for riding with us and for all the excitement around expansion — it means everything. More to come soon!",
+      "start_date": "2026-09-16",
+      "end_date": "2027-09-16",
+      "is_important": true,
+      "priority": 1,
+      "created_at": "2026-09-16T12:00:00.000Z"
+    }
+  ],
+  "last_updated": "2026-09-16T12:00:00.000Z"
+}
